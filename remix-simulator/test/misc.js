@@ -22,7 +22,7 @@ describe('Misc', function () {
   })
 
   it('should get protocol version', async function () {
-    web3._requestManager.send({method: 'eth_protocolVersion', params: []}, (err, result) => {
+    web3._requestManager.send({method: 'etrue_protocolVersion', params: []}, (err, result) => {
       if (err) {
         throw new Error(err)
       }

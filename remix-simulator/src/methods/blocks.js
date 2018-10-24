@@ -4,12 +4,12 @@ var Blocks = function () {
 
 Blocks.prototype.methods = function () {
   return {
-    eth_getBlockByNumber: this.eth_getBlockByNumber.bind(this),
-    eth_gasPrice: this.eth_gasPrice.bind(this)
+    etrue_getBlockByNumber: this.etrue_getBlockByNumber.bind(this),
+    etrue_gasPrice: this.etrue_gasPrice.bind(this)
   }
 }
 
-Blocks.prototype.eth_getBlockByNumber = function (payload, cb) {
+Blocks.prototype.etrue_getBlockByNumber = function (payload, cb) {
   let b = {
     'difficulty': '0x0',
     'extraData': '0x',
@@ -35,7 +35,7 @@ Blocks.prototype.eth_getBlockByNumber = function (payload, cb) {
   cb(null, b)
 }
 
-Blocks.prototype.eth_gasPrice = function (payload, cb) {
+Blocks.prototype.etrue_gasPrice = function (payload, cb) {
   cb(null, 1)
 }
 

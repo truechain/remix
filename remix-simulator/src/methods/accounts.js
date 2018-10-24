@@ -11,11 +11,11 @@ var Accounts = function () {
 
 Accounts.prototype.methods = function () {
   return {
-    eth_accounts: this.eth_accounts.bind(this)
+    etrue_accounts: this.etrue_accounts.bind(this)
   }
 }
 
-Accounts.prototype.eth_accounts = function (payload, cb) {
+Accounts.prototype.etrue_accounts = function (payload, cb) {
   return cb(null, this.accounts.map((x) => x.address))
 }
 
